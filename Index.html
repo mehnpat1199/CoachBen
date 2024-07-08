@@ -245,6 +245,20 @@
   }
 }
 
+.image-container {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        .image-container img {
+            width: 150px; /* Adjust as needed */
+            height: auto;
+            border-radius: 50%;
+        }
+
 </style>
 </head>
 
@@ -252,6 +266,9 @@
 
 <body onclick="redirectToNextPage()">
 <section>
+  <div class="image-container">
+    <img src="coachbenpng.png" alt="Coach Ben">
+</div>
 <div class="from-me">
     <p>How has being coached by Ben impacted you?</p>
   </div>
